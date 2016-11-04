@@ -34,10 +34,8 @@ plot(x, y)
 # 5 minute break!
 a = 1:5
 b = 6:10
+# now I will plot
 plot(a, b)
 
 # Navigate to:
 # github.com/ITSLeeds/R4TS
-
-
-
