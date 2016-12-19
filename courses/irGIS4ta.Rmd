@@ -3,7 +3,7 @@ output:
   github_document 
 ---
 
-# Introductory R and GIS for Transport Applications
+# Introductory R for Transport Applications
 
 ## Overview
 
@@ -15,4 +15,118 @@ This two day course covers two fundamental skillsets in transport research: prog
 
 This course will provide tools, example code and data and above all face-to-face teaching to empower participants with new software to answer these questions and more. The focus is on the programming language R and GIS software QGIS, although the principles and skills learned will be applicable to a wide range of computing set-ups. Of use to researchers and analysts in the public sector, academia and industry, introductory R and GIS for Transport Applications will open a new world of possiblities for generating insight from your transport datasets.
 
+As with any language, it is important to gain a strong understanding
+of the underlying syntax and structure before moving on to complex uses. 
+This course therefore focuses on the foundations: how R can be used to load,
+manipulate, process, transform and visualise spatial data.
+
+Prior experience with R or an understanding of common geographic and transport-related datasets is highly recommended.
+participants will also benefit from experience with GIS.
+
+In the first day we will cover general concepts in efficient R programming and the basics of spatial data classes in R. Building on this foundation the second day will cover the application of the skills developed in Day 1 to transport datasets, with a focus on geographical transport data.
+
 ## Learning objectives
+
+
+### Day 1:
+
+- Learn and cosolidate the basics of R's syntax
+- Discover time-saving tips for efficient programming
+- Discover how add-on R packages such as **dplyr** can be used to improve productivity
+- Understand how R can be used to read, process and save transport-related datasets
+- Understand the structure of spatial data in R
+
+### Day 2:
+
+- Be able to query, subset and analyse spatial objects
+- Have a working knowledge of fundamental GIS functions such as changing projections
+- Be proficient in the use of R to create maps using add-on packages such as tmap
+- Have some experience with transport planning functions provided by **stplanr**
+    - Route allocation
+    - OD pair processing to generate geographic desire lines
+    - Using the `overline()` function to aggregate routes to create a route network
+    
+## Agenda
+
+### Day 1: Intermediate R and the basics of R as a GIS
+
+- Registration and refreshments (9:00 - 9:30)
+
+- An introduction to R, RStudio and the power of packages (9:30 - 10:30)
+    - Why R for transport data?
+    - Boosting productivity with RStudio, space-aged IDE
+    - How R's ecosystem works: packages, tutorials, help forums and code sharing sites
+
+- Objects, functions and concepts for efficient R programming (10:30 - 11:30) 
+    - 15 minutes intro, 45 minutes hands on
+    - An introduction to classes
+    - Types of vector data
+    - Dimensionality: lists, matrices, data frames and arrays
+
+- Data manipulation (11:30 - 12:30)
+    - Subestting vectors (one dimensional datasets)
+    - Regex for selecting and replacing text strings
+    - A taster of plotting methods
+
+**LUNCH: 12:30 - 13:30**
+
+- Data carpentry with **dplyr** (13:30 - 15:30)
+    - Subsetting rows and columns
+    - Creating new variables
+    - Grouping and aggregating
+    - Joining tables together
+
+**15:30 - 15:45 Refreshments**
+
+- Spatial data in R: classes and projections (15:45 - 16:00)
+    - SpatialPoints
+    - SpatialPointsDataFrame
+    - Using `spTransform()`
+
+- Data visualisation (16:00 - 16:30)
+    - Using R's base graphics for data exploration ()
+    - Getting your head around **ggplot2**
+
+### Day 2: R for transport applications
+
+- Registration and refreshments (9:00 - 9:30)
+
+- Recap on R as a GIS: a worked example (9:30 - 10:30) 
+    - Live demo on modelling Cycling Uptake in Leeds
+    - Practical work-out with example data and code 
+
+- Spatial operations for transport research (10:30 - 12:00)
+    - Subsetting data
+    - Spatial aggregation
+    - Buffers, unions and binds
+
+- An introduction to visualising transport data with **tmap** (11:30 - 12:30)
+
+**LUNCH: 12:30 - 13:30**
+
+- Introduction to raster data for transport applications (13:30 - 14:30) 
+    - Raster data classes
+    - Raster heatmaps to understand transport flows
+
+- Transport data with **stplanr** (14:30 - 15:30)
+    - Handling OD data
+    - Creating 'desire lines' from OD and zone data
+    - Route allocation and route network creation
+
+
+**15:30 - 15:45 Refreshments**
+
+- Advanced graphics for transport applications: demonstration of the Propensity to Cycle Tool and practical
+
+- Taking it further, applications to your own datasets and Q & A (16:00 onwards)
+
+### Prerequisites
+
+Either working knowledge of R and RStudio or experience working with transport-related and geographical datasets is assumed.
+
+<!-- Background reading “A (very) short introduction to R”, Paul Torfs & Claudia Brauer -->
+<!-- http://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf -->
+
+<!-- ### Course home-page -->
+
+<!-- For more information on the course, please see here: https://github.com/Robinlovelace/Creating-maps-in-R -->
