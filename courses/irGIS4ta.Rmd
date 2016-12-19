@@ -1,0 +1,18 @@
+---
+output: 
+  github_document 
+---
+
+# Introductory R and GIS for Transport Applications
+
+## Overview
+
+This two day course covers two fundamental skillsets in transport research: programming and Geographical Information Systems (GIS). By combining the two, a wide range of research questions and practical problems can be tackled, including:
+
+- How to handle large transport datasets?
+- Where to locate new transport infrastructure? 
+- How to develop automated and reproducible transport planning workflows?
+
+This course will provide tools, example code and data and above all face-to-face teaching to empower participants with new software to answer these questions and more. The focus is on the programming language R and GIS software QGIS, although the principles and skills learned will be applicable to a wide range of computing set-ups. Of use to researchers and analysts in the public sector, academia and industry, introductory R and GIS for Transport Applications will open a new world of possiblities for generating insight from your transport datasets.
+
+## Learning objectives
