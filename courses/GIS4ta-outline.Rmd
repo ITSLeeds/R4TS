@@ -5,6 +5,8 @@ output:
 
 # R for Transport Applications: handling Big Data in spatial world
 
+Next on: 26^th^ and 27^th^ April - see  [its.leeds.ac.uk/courses/cpd/r-for-transport-applications/](http://www.its.leeds.ac.uk/courses/cpd/r-for-transport-applications/).
+
 ## Overview
 
 This course teaches two skill-sets that are fundamental in modern transport research: programming and Geographical Information Systems (GIS). By combining these two, to develop flexible, extensible models, and analyse and visualise the results at the local level, a wide range of research questions and practical problems can be tackled. The skill-sets learned during the course are generalisable and help provide answers to many transport research question, including:
