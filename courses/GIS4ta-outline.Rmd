@@ -3,7 +3,7 @@ output:
   github_document 
 ---
 
-# R for Transport Applications: handling Big Data in spatial world
+# R for Transport Applications: Handling Big Data in Spatial World
 
 Next on: 26^th^ and 27^th^ April - see  [its.leeds.ac.uk/courses/cpd/r-for-transport-applications/](http://www.its.leeds.ac.uk/courses/cpd/r-for-transport-applications/).
 
