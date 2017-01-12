@@ -23,11 +23,7 @@ of the underlying syntax and structure before moving on to complex uses.
 This course therefore focuses on the foundations: how R can be used to load,
 manipulate, process, transform and visualise spatial data.
 
-Prior experience with transport datasets or common geographic data formats is essential.
-Some exposure to software with a command-line interface, such as Stata, Python or R is highly recommended.
-Attendees who are already proficient with their R programming skills are welcome to attend just the second day, although attendance of both days is highly recommended for most attendees: even advanced R users are likely to learn something on the first day.
-
-The breakdown of content covered on each day is as follows. The first day will focus on how the R language works, general concepts in efficient R programming, and spatial and non-spatial data classes in R. Building on this strong foundation the second day will cover the application of the skills developed in Day 1 to transport datasets, with a focus on geographical transport data.
+In terms of content, the **first day** will focus on how the R language works, general concepts in efficient R programming, and spatial and non-spatial data classes in R. Building on this strong foundation the **second day** will cover the application of the skills developed in Day 1 to transport datasets, with a focus on geographical transport data.
 
 ## Learning objectives
 
@@ -55,9 +51,9 @@ The breakdown of content covered on each day is as follows. The first day will f
 
 - Registration and refreshments (9:00 - 9:30)
 
-- An introduction to R, R Studio and the power of packages (9:30 - 10:30)
+- An introduction to R, RStudio and the power of packages (9:30 - 10:30)
     - Why R for transport data?
-    - Boosting productivity with R Studio, space-aged IDE
+    - Boosting productivity with RStudio, space-aged IDE
     - How R's ecosystem works: packages, tutorials, help forums and code sharing sites
 
 - Objects, functions and concepts for efficient R programming (10:30 - 11:30) 
@@ -125,9 +121,24 @@ The breakdown of content covered on each day is as follows. The first day will f
 
 ### Prerequisites
 
-Either working knowledge of R and R Studio or experience working with transport-related and geographical datasets is assumed.
+Prior experience with transport datasets or common geographic data formats is **essential.**
 
-- see  [its.leeds.ac.uk/courses/cpd/r-for-transport-applications/](http://www.its.leeds.ac.uk/courses/cpd/r-for-transport-applications/).
+Some exposure to software with a command-line interface, such as Stata, Python or R is **highly recommended**.
+
+Attendees who are already proficient with their R programming skills are welcome to attend just the second day, although attendance of both days is recommended for most attendees: even advanced R users are likely to learn something on the first day.
+
+**Computers** with RStudio installed will be available for course attendees. However, for maximum benefit, we recommend participants bring their own laptops, with the latest version of R installed.
+Steps to set-up a suitable R/RStudio environment are described in sections [2.3](https://csgillespie.github.io/efficientR/set-up.html#r-version) and [2.5](https://csgillespie.github.io/efficientR/set-up.html#rstudio) of the book [Efficient R Programming](https://csgillespie.github.io/efficientR/set-up.html).
+It is also recommended the following packages are installed prior to attending the course:
+
+```{r, eval=FALSE}
+install.packages(c(
+  "sf",
+  "stplanr",
+  "tidyverse",
+  "tmap"
+))
+```
 
 ### Course tutor
 
@@ -156,9 +167,7 @@ Course bookings and other enquiries can be made via a booking form available fro
 
 For enquiries please contact the Short Courses Co-ordinator:
 
-Tel: +44 (0)113 343 9904
-
-Email: cpd(at)its.leeds.ac.uk
+Email: e.a.pound@leeds.ac.uk
 
 ### References
 
