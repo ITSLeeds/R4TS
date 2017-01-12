@@ -1,11 +1,12 @@
 ---
-output: 
-  github_document 
+output: word_document
 ---
 
 # R for Transport Applications: Handling Big Data in Spatial World
 
-Next on: 26^th^ and 27^th^ April - see  [its.leeds.ac.uk/courses/cpd/r-for-transport-applications/](http://www.its.leeds.ac.uk/courses/cpd/r-for-transport-applications/).
+Next on: 26^th^ and 27^th^ April.
+
+Prices: to be confirmed.
 
 ## Overview
 
@@ -125,6 +126,45 @@ The breakdown of content covered on each day is as follows. The first day will f
 ### Prerequisites
 
 Either working knowledge of R and R Studio or experience working with transport-related and geographical datasets is assumed.
+
+- see  [its.leeds.ac.uk/courses/cpd/r-for-transport-applications/](http://www.its.leeds.ac.uk/courses/cpd/r-for-transport-applications/).
+
+### Course tutor
+
+[Robin Lovelace](http://robinlovelace.net/) is a researcher at the Leeds Institute for Transport Studies ([ITS](http://www.its.leeds.ac.uk/)) and the Leeds Institute for Data Analytics ([LIDA](http://lida.leeds.ac.uk/about-lida/contact/)). Robin has many years using R for academic
+research and has taught numerous R courses at all levels. He has developed popular R resources including
+the recently published book [Efficient R Programming](http://shop.oreilly.com/product/0636920047995.do) (Gillespie and Lovelace 2016),
+[Introduction to Visualising Spatial Data in R](https://github.com/Robinlovelace/Creating-maps-in-R)
+and
+[Spatial Microsimulation with R](https://github.com/Robinlovelace/spatial-microsim-book)
+(Lovelace and Dumont 2016). These skills have been applied on a number of projects with real-world applications, including the [Propensity to Cycle Tool](http://www.pct.bike/), a nationally scalable interactive online mapping
+application, and the [**stplanr**](https://github.com/ropensci/stplanr) package.
+
+```{r, echo=FALSE, fig.width=6}
+knitr::include_graphics(path = "https://www.its.leeds.ac.uk/fileadmin/templates/assets/img/people/Robin%20Lovelace%20Sept%202016%20140x180.jpg")
+```
+
+
+### Further information & how to book
+
+The course will be held in the Leeds Institute for Data Analytics (see [lida.leeds.ac.uk/about-lida/contact/](http://lida.leeds.ac.uk/about-lida/contact/) for details and a map).
+
+
+The course is open to ITS Masters and PhD students, and external delegates. The fee includes learning materials, lunch and refreshments during the course, but not overnight accommodation. The course is also available as bespoke or in-company training.
+
+Course bookings and other enquiries can be made via a booking form available from [http://www.its.leeds.ac.uk/courses/cpd/how-to-book/](its.leeds.ac.uk/courses/cpd/how-to-book/).
+
+For enquiries please contact the Short Courses Co-ordinator:
+
+Tel: +44 (0)113 343 9904
+
+Email: cpd(at)its.leeds.ac.uk
+
+### References
+
+Lovelace, Robin, and Morgane Dumont. 2016. Spatial Microsimulation with R. Available from [CRC Press](https://www.crcpress.com/Spatial-Microsimulation-with-R/Lovelace-Dumont/9781498711548). 
+
+Gillespie, C., Lovelace, R., 2016. Efficient R Programming: A Practical Guide to Smarter Programming. Available from [O’Reilly Media](http://shop.oreilly.com/product/0636920047995.do). 
 
 <!-- Background reading “A (very) short introduction to R”, Paul Torfs & Claudia Brauer -->
 <!-- http://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf -->
