@@ -1,0 +1,5 @@
+# Spatial regression with 
+
+Outline:
+
+A walk-through of doing spatial regression based on car fleet data. Work in progress, led by Craig Morton.
