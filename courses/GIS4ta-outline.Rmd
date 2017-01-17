@@ -136,7 +136,8 @@ install.packages(c(
   "sf",
   "stplanr",
   "tidyverse",
-  "tmap"
+  "tmap",
+  "openair"
 ))
 ```
 
