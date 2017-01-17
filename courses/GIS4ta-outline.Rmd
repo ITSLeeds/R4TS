@@ -14,6 +14,7 @@ This course teaches two skill-sets that are fundamental in modern transport rese
 
 - How to handle large transport datasets?
 - Where to locate new transport infrastructure? 
+- How can increasingly available datasets on air quality, traffic and active travel be analysed and visualised to inform transport policy?
 - How to develop automated and reproducible transport planning workflows?
 
 This course will provide tools, example code and data and above all face-to-face teaching to empower participants with new software to answer these questions and more. The focus is on the programming language R (we will briefly look at visualising results in QGIS). However, the principles and skills learned will be cross-transferable to other languages. By providing strong foundations in spatial data handling and the use of an up-coming language for statistical computing, R for Transport Applications aims to open a world of possibilities for generating insight from your transport datasets for researchers in the public sector, academia and industry alike
@@ -140,9 +141,9 @@ install.packages(c(
 ))
 ```
 
-### Course tutor
+### Course tutors
 
-[Robin Lovelace](http://robinlovelace.net/) is a researcher at the Leeds Institute for Transport Studies ([ITS](http://www.its.leeds.ac.uk/)) and the Leeds Institute for Data Analytics ([LIDA](http://lida.leeds.ac.uk/about-lida/contact/)). Robin has many years using R for academic
+**[Robin Lovelace](http://robinlovelace.net/)** is a researcher at the Leeds Institute for Transport Studies ([ITS](http://www.its.leeds.ac.uk/)) and the Leeds Institute for Data Analytics ([LIDA](http://lida.leeds.ac.uk/about-lida/contact/)). Robin has many years using R for academic
 research and has taught numerous R courses at all levels. He has developed popular R resources including
 the recently published book [Efficient R Programming](http://shop.oreilly.com/product/0636920047995.do) (Gillespie and Lovelace 2016),
 [Introduction to Visualising Spatial Data in R](https://github.com/Robinlovelace/Creating-maps-in-R)
@@ -154,6 +155,10 @@ application, and the [**stplanr**](https://github.com/ropensci/stplanr) package.
 ```{r, echo=FALSE, fig.width=6}
 knitr::include_graphics(path = "https://www.its.leeds.ac.uk/fileadmin/templates/assets/img/people/Robin%20Lovelace%20Sept%202016%20140x180.jpg")
 ```
+
+**[James Tate](http://www.its.leeds.ac.uk/people/j.tate)** is ...
+
+*More info to go here please.*
 
 
 ### Further information & how to book
