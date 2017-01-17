@@ -90,34 +90,33 @@ In terms of content, the **first day** will focus on how the R language works, g
 
 - Registration and refreshments (9:00 - 9:30)
 
-- Recap on R as a GIS: a worked example (9:30 - 10:30) 
-    - Live demo on modelling Cycling Uptake in Leeds
-    - Practical work-out with example data and code 
+- Recap on R as a GIS: a worked example (9:30 - 10:00) 
+    - Live demo of the Propensity to Cycle Tool
+    - Practical walk through illustrating a transport planning workflow in R
 
-- Spatial operations for transport research (10:30 - 12:00)
+- Spatial operations for transport research (10:00 - 11:00)
     - Subsetting data
     - Spatial aggregation
     - Buffers, unions and binds
-
-- An introduction to visualising transport data with **tmap** (11:30 - 12:30)
-
-**LUNCH: 12:30 - 13:30**
-
-- Introduction to raster data for transport applications (13:30 - 14:30) 
-    - Raster data classes
-    - Raster heatmaps to understand transport flows
-
-- Transport data with **stplanr** (14:30 - 15:30)
+    
+- Transport data with **stplanr** (11:00 - 12:30)
     - Handling OD data
     - Creating 'desire lines' from OD and zone data
     - Route allocation and route network creation
 
+**LUNCH: 12:30 - 13:30**
+
+- Traffic data and pollution analysis with R (13:30 - 15:30, delivered by [Dr James Tate](http://www.its.leeds.ac.uk/people/j.tate)) 
+    - An introduction to the **openair** package
+    - Traffic count data
+    - Meteorological data
+    - Air pollution data: daily, weekly and seasonal variability
+    - Visualising air pollution data and next steps
 
 **15:30 - 15:45 Refreshments**
 
-- Advanced graphics for transport applications: demonstration of the Propensity to Cycle Tool and practical
-
-- Taking it further, applications to your own datasets and Q & A (16:00 onwards)
+- Advanced graphics for transport applications: an illustration using **tmap**
+- Taking it further, adding interactivity and applying the methods to your data (16:00 onwards)
 
 ### Prerequisites
 
