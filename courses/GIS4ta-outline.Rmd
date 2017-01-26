@@ -158,7 +158,7 @@ knitr::include_graphics(path = "https://www.its.leeds.ac.uk/fileadmin/templates/
 
 **[James Tate](http://www.its.leeds.ac.uk/people/j.tate)** is ...
 
-*More info to go here please.*
+**[Dr Craig Morton](https://www.its.leeds.ac.uk/people/c.morton)** is a Research Fellow at the Institute for Transport Studies where he conducts research on the adoption of new technologies by individuals, such as household interest with cars in general and the emerging demand for Electric Vehicles in particular, alongside research which investigates household interest in energy efficiency technologies and building retrofits. Craig draws from a spectrum of methodologies to conduct his research covering socio-psychological theories of human behaviour, market segmentation analysis of citizen archetypes and spatial analysis of transport and energy demand patterns.
 
 
 ### Further information & how to book
