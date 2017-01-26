@@ -4,9 +4,15 @@ output: word_document
 
 # R for Transport Applications: Handling Big Data in Spatial World
 
+## Dates and prices
+
 Next on: 26^th^ and 27^th^ April.
 
-Prices: to be confirmed.
+Delegate type | Price (£ early bird) | Price (£)
+---------|:---|:------------------------
+External | 750 | 900
+Academic | 550 | 700
+Student  | 350 | 500
 
 ## Overview
 
