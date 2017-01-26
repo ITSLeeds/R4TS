@@ -8,31 +8,104 @@ output:
 
 ## Topic Area (and proposed title if known)
 
+Topic area: data analysis and programming
 
-2. Course content
-(brief description and balance of lecture/practical sessions)
+Title: R for Transport Applications: Handling Big Data in Spatial World
+
+## Course content (brief description and balance of lecture/practical sessions)
+
+### Day 1: Intermediate R and the basics of R as a GIS
+
+- Registration and refreshments (9:00 - 9:30)
+
+- An introduction to R, RStudio and the power of packages (9:30 - 10:30)
+    - Why R for transport data?
+    - Boosting productivity with RStudio, space-aged IDE
+    - How R's ecosystem works: packages, tutorials, help forums and code sharing sites
+
+- Objects, functions and concepts for efficient R programming (10:30 - 11:30) 
+    - 15 minutes intro, 45 minutes hands on
+    - An introduction to classes
+    - Types of vector data
+    - Dimensionality: lists, matrices, data frames and arrays
+
+- Data manipulation (11:30 - 12:30)
+    - Subestting vectors (one dimensional datasets)
+    - Regex for selecting and replacing text strings
+    - A taster of plotting methods
+
+**LUNCH: 12:30 - 13:30**
+
+- Data carpentry with **dplyr** (13:30 - 15:30)
+    - Subsetting rows and columns
+    - Creating new variables
+    - Grouping and aggregating
+    - Joining tables together
+
+**15:30 - 15:45 Refreshments**
+
+- Spatial data in R: classes and projections (15:45 - 16:00)
+    - SpatialPoints
+    - SpatialPointsDataFrame
+    - Using `spTransform()`
+
+- Data visualisation (16:00 - 16:30)
+    - Using R's base graphics for data exploration ()
+    - Getting your head around **ggplot2**
+
+### Day 2: R for transport applications
+
+- Registration and refreshments (9:00 - 9:30)
+
+- Recap on R as a GIS: a worked example (9:30 - 10:00) 
+    - Live demo of the Propensity to Cycle Tool
+    - Practical walk through illustrating a transport planning workflow in R
+
+- Spatial operations for transport research (10:00 - 11:00)
+    - Subsetting data
+    - Spatial aggregation
+    - Buffers, unions and binds
+    
+- Transport data with **stplanr** (11:00 - 12:30)
+    - Handling OD data
+    - Creating 'desire lines' from OD and zone data
+    - Route allocation and route network creation
+
+**LUNCH: 12:30 - 13:30**
+
+- Traffic data and pollution analysis with R (13:30 - 15:30, delivered by [Dr James Tate](http://www.its.leeds.ac.uk/people/j.tate)) 
+    - An introduction to the **openair** package
+    - Traffic count data
+    - Meteorological data
+    - Air pollution data: daily, weekly and seasonal variability
+    - Visualising air pollution data and next steps
+
+**15:30 - 15:45 Refreshments**
+
+- Advanced graphics for transport applications: an illustration using **tmap**
+- Taking it further, adding interactivity and applying the methods to your data (16:00 onwards)
 
 
-3. Link to current or proposed postgraduate teaching activity
+## Link to current or proposed postgraduate teaching activity
+
+This links to the introductory computing 1 off session and the R practicals in the SSPA module.
+
+## Link to research activities/impact
+
+Links to the propensity to cycle tool (PCT) and engagement with Local Authorities and the private sector.
 
 
-4. Link to research activities/impact
+## Primary potential market 
+
+Public sector and consultancy analysts
 
 
-5. Primary potential market 
-(government, consultant, academic, PhD students, UK, overseas)
+## Timeframe before first delivery (within 6 months, 12 months, etc.)
 
+Within 6 months.
 
-6. Timeframe before first delivery (within 6 months, 12 months, etc.)
+**Dates:** 26^th^ and 27^th^ April
 
-7. Delivery method
-(1 day, 2 day, 3 days, etc.  Leeds, London, elsewhere.  Full days or half days)
+## Delivery method
 
-This course teaches two skill-sets that are fundamental in modern transport research: programming and Geographical Information Systems (GIS). By combining these two, to develop flexible, extensible models, and analyse and visualise the results at the local level, a wide range of research questions and practical problems can be tackled. The skill-sets learned during the course are generalisable and help provide answers to many transport research question, including:
-
-- How to handle large transport datasets?
-- Where to locate new transport infrastructure? 
-- How can increasingly available datasets on air quality, traffic and active travel be analysed and visualised to inform transport policy?
-- How to develop automated and reproducible transport planning workflows?
-
-This course will provide tools, example code and data and above all face-to-face teaching to empower participants with new software to answer these questions and more. The focus is on the programming language R (we will briefly look at visualising results in QGIS). However, the principles and skills learned will be cross-transferable to other languages. By providing strong foundations in spatial data handling and the use of an up-coming language for statistical computing, R for Transport Applications aims to open a world of possibilities for generating insight from your transport datasets for researchers in the public sector, academia and industry alike.
+2 days in LIDA, Leeds, full days.
