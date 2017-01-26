@@ -1,0 +1,38 @@
+---
+title: 'R for Transport Applications: summary'
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+## Topic Area (and proposed title if known)
+
+
+2. Course content
+(brief description and balance of lecture/practical sessions)
+
+
+3. Link to current or proposed postgraduate teaching activity
+
+
+4. Link to research activities/impact
+
+
+5. Primary potential market 
+(government, consultant, academic, PhD students, UK, overseas)
+
+
+6. Timeframe before first delivery (within 6 months, 12 months, etc.)
+
+7. Delivery method
+(1 day, 2 day, 3 days, etc.  Leeds, London, elsewhere.  Full days or half days)
+
+This course teaches two skill-sets that are fundamental in modern transport research: programming and Geographical Information Systems (GIS). By combining these two, to develop flexible, extensible models, and analyse and visualise the results at the local level, a wide range of research questions and practical problems can be tackled. The skill-sets learned during the course are generalisable and help provide answers to many transport research question, including:
+
+- How to handle large transport datasets?
+- Where to locate new transport infrastructure? 
+- How can increasingly available datasets on air quality, traffic and active travel be analysed and visualised to inform transport policy?
+- How to develop automated and reproducible transport planning workflows?
+
+This course will provide tools, example code and data and above all face-to-face teaching to empower participants with new software to answer these questions and more. The focus is on the programming language R (we will briefly look at visualising results in QGIS). However, the principles and skills learned will be cross-transferable to other languages. By providing strong foundations in spatial data handling and the use of an up-coming language for statistical computing, R for Transport Applications aims to open a world of possibilities for generating insight from your transport datasets for researchers in the public sector, academia and industry alike.
