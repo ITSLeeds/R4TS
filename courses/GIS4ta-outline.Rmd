@@ -10,14 +10,16 @@ Prices: to be confirmed.
 
 ## Overview
 
-This course teaches two skill-sets that are fundamental in modern transport research: programming and Geographical Information Systems (GIS). By combining these two, to develop flexible, extensible models, and analyse and visualise the results at the local level, a wide range of research questions and practical problems can be tackled. The skill-sets learned during the course are generalisable and help provide answers to many transport research question, including:
+This course teaches two skill-sets that are fundamental in modern transport research: programming and data analytics, with a focus on spatial data. Combining these enables powerful transport planning and analysis workflows for tackling a wide range of problems, including:
 
-- How to handle large transport datasets?
+- How to effectively handle large transport datasets?
 - Where to locate new transport infrastructure? 
-- How can increasingly available datasets on air quality, traffic and active travel be analysed and visualised to inform transport policy?
 - How to develop automated and reproducible transport planning workflows?
+- How can increasingly available datasets on air quality, traffic and active travel be used to inform policy?
+- How to visualise results in an attractive and potentially on-line and interactive manner?
 
-This course will provide tools, example code and data and above all face-to-face teaching to empower participants with new software to answer these questions and more. The focus is on the programming language R (we will briefly look at visualising results in QGIS). However, the principles and skills learned will be cross-transferable to other languages. By providing strong foundations in spatial data handling and the use of an up-coming language for statistical computing, R for Transport Applications aims to open a world of possibilities for generating insight from your transport datasets for researchers in the public sector, academia and industry alike.
+This course will provide tools, example code and data and above all face-to-face teaching to empower participants with new software to answer these questions and more.
+The focus is on the programming language R (we will briefly look at visualising results in QGIS). However, the principles and skills learned will be cross-transferable to other languages. By providing strong foundations in spatial data handling and the use of an up-coming language for statistical computing, R for Transport Applications aims to open a world of possibilities for generating insight from your transport datasets for researchers in the public sector, academia and industry alike.
 
 As with any language, it is important to gain a strong understanding
 of the underlying syntax and structure before moving on to complex uses. 
@@ -156,7 +158,7 @@ application, and the [**stplanr**](https://github.com/ropensci/stplanr) package.
 knitr::include_graphics(path = "https://www.its.leeds.ac.uk/fileadmin/templates/assets/img/people/Robin%20Lovelace%20Sept%202016%20140x180.jpg")
 ```
 
-**[James Tate](http://www.its.leeds.ac.uk/people/j.tate)** is aa air pollution modelling and monitoring expert focussing on the impacts of road transport on the environment. He has developed and deployed new approaches to survey and model the emission performance of the UK/ EU road transport fleet. James has been using R as the primary tool in his data analysis workflow for a decade and has developed popular modules teaching R to Master's students in ITS.
+**[James Tate](http://www.its.leeds.ac.uk/people/j.tate)** is a vehicle emissions and air quality expert focussing on the impacts of road transport on the environment. He has developed and deployed new approaches to survey and model the emission performance of the UK/ EU road transport fleet. James has been using R as the primary tool in his data analysis workflow for a decade and has developed popular modules teaching R to Master's students in ITS.
 
 **[Dr Craig Morton](https://www.its.leeds.ac.uk/people/c.morton)** is a Research Fellow at the Institute for Transport Studies where he conducts research on the adoption of new technologies by individuals, such as household interest with cars in general and the emerging demand for Electric Vehicles in particular, alongside research which investigates household interest in energy efficiency technologies and building retrofits. Craig draws from a spectrum of methodologies to conduct his research covering socio-psychological theories of human behaviour, market segmentation analysis of citizen archetypes and spatial analysis of transport and energy demand patterns.
 
