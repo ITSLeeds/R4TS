@@ -72,7 +72,7 @@ In terms of content, the **first day** will focus on how the R language works, g
     - Dimensionality: lists, matrices, data frames and arrays
 
 - Data manipulation (11:30 - 12:30)
-    - Subestting vectors (one dimensional datasets)
+    - Subsetting vectors (one dimensional datasets)
     - Regex for selecting and replacing text strings
     - A taster of plotting methods
 
@@ -151,7 +151,7 @@ install.packages(c(
 
 ### Course tutors
 
-**[Robin Lovelace](http://robinlovelace.net/)** is a researcher at the Leeds Institute for Transport Studies ([ITS](http://www.its.leeds.ac.uk/)) and the Leeds Institute for Data Analytics ([LIDA](http://lida.leeds.ac.uk/about-lida/contact/)). Robin has many years using R for academic
+**[Robin Lovelace](http://robinlovelace.net/)** is a researcher at the Leeds Institute for Transport Studies ([ITS](http://www.its.leeds.ac.uk/)) and the Leeds Institute for Data Analytics ([LIDA](http://lida.leeds.ac.uk/about-lida/contact/)). Robin has many years of experience of using R for academic
 research and has taught numerous R courses at all levels. He has developed popular R resources including
 the recently published book [Efficient R Programming](http://shop.oreilly.com/product/0636920047995.do) (Gillespie and Lovelace 2016),
 [Introduction to Visualising Spatial Data in R](https://github.com/Robinlovelace/Creating-maps-in-R)
@@ -166,7 +166,7 @@ knitr::include_graphics(path = "https://www.its.leeds.ac.uk/fileadmin/templates/
 
 **[James Tate](http://www.its.leeds.ac.uk/people/j.tate)** is a vehicle emissions and air quality expert focussing on the impacts of road transport on the environment. He has developed and deployed new approaches to survey and model the emission performance of the UK/ EU road transport fleet. James has been using R as the primary tool in his data analysis workflow for a decade and has developed popular modules teaching R to Master's students in ITS.
 
-**[Dr Craig Morton](https://www.its.leeds.ac.uk/people/c.morton)** is a Research Fellow at the Institute for Transport Studies where he conducts research on the adoption of new technologies by individuals, such as household interest with cars in general and the emerging demand for Electric Vehicles in particular, alongside research which investigates household interest in energy efficiency technologies and building retrofits. Craig draws from a spectrum of methodologies to conduct his research covering socio-psychological theories of human behaviour, market segmentation analysis of citizen archetypes and spatial analysis of transport and energy demand patterns.
+**[Craig Morton](https://www.its.leeds.ac.uk/people/c.morton)** is a Research Fellow at the Institute for Transport Studies where he conducts research on the adoption of new technologies by individuals, such as household interest with cars in general and the emerging demand for Electric Vehicles in particular, alongside research which investigates household interest in energy efficiency technologies and building retrofits. Craig draws from a spectrum of methodologies to conduct his research covering socio-psychological theories of human behaviour, market segmentation analysis of citizen archetypes and spatial analysis of transport and energy demand patterns.
 
 
 ### Further information & how to book
