@@ -8,38 +8,41 @@ output:
 
 ## Topic Area (and proposed title if known)
 
-Topic area: data analysis and programming
+Topic area: data analysis and programming. Title: R for Transport Applications: Handling Big Data in Spatial World
 
-Title: R for Transport Applications: Handling Big Data in Spatial World
+## Course content 
 
-## Course content (brief description and balance of lecture/practical sessions)
-
-See https://github.com/ITSLeeds/R4TS/blob/master/courses/GIS4ta-outline.Rmd for details.
-
-### Day 1: Intermediate R and the basics of R as a GIS
-
-### Day 2: R for transport applications
+- See [github](https://github.com/ITSLeeds/R4TS/blob/master/courses/GIS4ta-outline.Rmd) for details.
+- Day 1: Intermediate R and the basics of R as a GIS
+- Day 2: R for transport applications
 
 ## Link to current or proposed postgraduate teaching activity
 
-This links to the introductory computing 1 off session and the R practicals in the SSPA module.
+This links to the introductory computing 1 off session and the R practicals in the SSPA module TRAN5115.
 
 ## Link to research activities/impact
 
 Links to the propensity to cycle tool (PCT) and engagement with Local Authorities and the private sector.
 
+The cutting edge methods have been published in a paper (Lovelace et al., 2016) and a book (Gillespie and Lovelace 2016) that could be part of a REF impact case study.
 
 ## Primary potential market 
 
 Public sector and consultancy analysts
 
 
-## Timeframe before first delivery (within 6 months, 12 months, etc.)
+## Timeframe before first delivery 
 
-Within 6 months.
-
-**Dates:** 26^th^ and 27^th^ April
+Within 6 months. **Dates:** 26^th^ and 27^th^ April
 
 ## Delivery method
 
 2 days in LIDA, Leeds, full days.
+
+## References
+
+Gillespie, C., Lovelace, R., 2016. Efficient R Programming: A Practical Guide to Smarter Programming. O’Reilly Media.
+
+Lovelace, R., Goodman, A., Aldred, R., Berkoff, N., Abbas, A., Woodcock, J., 2016. The Propensity to Cycle Tool: An open source online system for sustainable transport planning. Journal of Transport and Land Use. doi:10.5198/jtlu.2016.862
+
+
