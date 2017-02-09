@@ -1,5 +1,7 @@
 ---
-output: word_document
+output:
+  word_document: default
+  html_document: default
 ---
 
 # R for Transport Applications: Handling Big Data in Spatial World
@@ -8,11 +10,14 @@ output: word_document
 
 Next on: 26^th^ and 27^th^ April.
 
-Delegate type | Price (£ early bird) | Price (£)
----------|:---|:------------------------
-External | 750 | 900
-Academic | 550 | 700
-Student  | 350 | 500
+
+<!-- Delegate type | Price (£ early bird) | Price (£) -->
+<!-- --------------|:---------------------|:--------- -->
+<!-- External      | 800                  | 900 -->
+<!-- Academic      | 600                  | 700 -->
+<!-- Student       | 400                  | 500 -->
+
+![](../figures/costs1.png)
 
 ## Overview
 
