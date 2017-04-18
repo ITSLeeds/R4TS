@@ -61,33 +61,38 @@ In terms of content, the **first day** will focus on how the R language works, g
     
 ## Agenda
 
-### Day 1: Intermediate R and the basics of R as a GIS
+- ERP references (e.g. ERP 1.5.2) refer to chapters in Efficient R Programming (Gillespie and Lovelace 2016)
+- IVSDR refers to Introduction to Visualising Spatial Data with R (Lovelace and Cheshire 2015)
+
+### Day 1: Intermediate R and the basics of R for transport data
 
 - Registration and refreshments (9:00 - 9:30)
 
 - An introduction to R, RStudio and the power of packages (9:30 - 10:30)
     - Why R for transport data?
-    - Boosting productivity with RStudio, space-aged IDE
-    - How R's ecosystem works: packages, tutorials, help forums and code sharing sites
+    - Boosting productivity with RStudio ([ERP 2.5](https://csgillespie.github.io/efficientR/set-up.html#rstudio))
+    - How R's ecosystem works: packages, tutorials, help forums and code sharing sites ([ERP 4.4](https://csgillespie.github.io/efficientR/workflow.html#package-selection) and [ERP 10](https://csgillespie.github.io/efficientR/learning.html))
 
 - Objects, functions and concepts for efficient R programming (10:30 - 11:30) 
-    - 15 minutes intro, 45 minutes hands on
+    - 15 minutes intro, 45 minutes hands on with the [Vectors chapter](http://r4ds.had.co.nz/vectors.html) of [R for Data Science](http://r4ds.had.co.nz) (Wickham and Grolemund 2016).
     - An introduction to classes
     - Types of vector data
     - Dimensionality: lists, matrices, data frames and arrays
+    - Subsetting and regular expressions
     
+
 - Getting data into R (11:30 - 12:00)
   - Data sources (CM lecture)
-  - Test run: downloading loading data
+  - Data formats and loading geographical data ([ERP 5](https://csgillespie.github.io/efficientR/input-output.html) and the '[sf1](https://cran.r-project.org/web/packages/sf/vignettes/sf1.html#reading-and-writing)' vignette)
+  - Practical: download and load data
+  
+<!-- Add Options -->
 
-- Data manipulation (11:30 - 12:30)
-    - Subsetting vectors (one dimensional datasets)
-    - Regex for selecting and replacing text strings
-    - A taster of plotting methods
+
 
 **LUNCH: 12:30 - 13:30**
 
-- Data carpentry with **dplyr** (13:30 - 15:30)
+- Data carpentry with **dplyr** (13:30 - 15:30, [ERP 6](https://csgillespie.github.io/efficientR/data-carpentry.html))
     - Subsetting rows and columns
     - Creating new variables
     - Grouping and aggregating
@@ -95,14 +100,12 @@ In terms of content, the **first day** will focus on how the R language works, g
 
 **15:30 - 15:45 Refreshments**
 
-- Spatial data in R: classes and projections (15:45 - 16:00)
-    - SpatialPoints
-    - SpatialPointsDataFrame
-    - Using `spTransform()`
+- Spatial data in R: classes, projections and joins (15:45 - 16:30)
+    - Spatial data classes [IVSDR II](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/intro-spatial.Rmd#part-ii-spatial-data-in-r)
+    - Creating and manipulating spatial data [IVSDR III](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/intro-spatial.Rmd#part-iii-creating-and-manipulating-spatial-data)
+        - Transforming data using `spTransform()`
+    - Bonus: visualisation [IVSDR IV](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/intro-spatial.Rmd#part-iv-making-maps-with-tmap-ggplot2-and-leaflet)
 
-- Data visualisation (16:00 - 16:30)
-    - Using R's base graphics for data exploration ()
-    - Getting your head around **ggplot2**
 
 ### Day 2: R for transport applications
 
