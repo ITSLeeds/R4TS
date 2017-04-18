@@ -75,6 +75,10 @@ In terms of content, the **first day** will focus on how the R language works, g
     - An introduction to classes
     - Types of vector data
     - Dimensionality: lists, matrices, data frames and arrays
+    
+- Getting data into R (11:30 - 12:00)
+  - Data sources (CM lecture)
+  - Test run: downloading loading data
 
 - Data manipulation (11:30 - 12:30)
     - Subsetting vectors (one dimensional datasets)
