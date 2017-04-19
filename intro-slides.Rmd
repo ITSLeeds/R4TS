@@ -4,6 +4,7 @@ author: "Robin Lovelace, University of Leeds, \n `r Sys.Date()`"
 date: "Slides: [rpubs.com/RobinLovelace](http://rpubs.com/RobinLovelace)"
 output:
   ioslides_presentation:
+    widescreen: true
     transition: slower
 ---
 ## Demonstration 1: The RStudio IDE
