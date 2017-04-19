@@ -1,0 +1,48 @@
+---
+title: "Big Data Archives"
+author: "Craig Morton"
+date: "18 April 2017"
+output: 
+  ioslides_presentation:
+    widescreen: true
+    transition: slower
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data Life Cycle
+
+- Over the past decade, there has been an increase in the amount of data being made **publicly available**
+- **Data curation** allows for the **re-use** of previously generated data for new purposes
+- This provides researchers with access to a wealth of **secondary data sources**
+
+```{r, out.height="300", out.width="400", echo=FALSE, fig.align='center'}
+knitr::include_graphics("Images/DCCDataLifecycle.png")
+```
+
+## Data Stores
+
+- Data can be stored in a number of different repositories, ranging from **personal collections to international archives**
+- As data moves up the storage hierarchy, it generally **increases in reach**
+- The presence of **national data centres** has expanded significantly
+
+```{r, out.height="300", out.width="500", echo=FALSE, fig.align='center'}
+knitr::include_graphics("Images/DataHierarchy.jpg")
+```
+
+## National Data Centres
+
+- A number of centres of UK data have now been established
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("Images/CDRC.png")
+```
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("Images/Gov Data.png")
+```
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("Images/UK Data Service.png")
+```
+
