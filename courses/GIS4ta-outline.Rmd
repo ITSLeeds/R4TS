@@ -6,9 +6,9 @@ output:
 
 # R for Transport Applications: Handling Big Data in Spatial World
 
-## Dates and prices
+<!-- ## Dates and prices -->
 
-Next on: 26^th^ and 27^th^ April.
+<!-- Next on: 26^th^ and 27^th^ April. -->
 
 
 <!-- Delegate type | Price (£ early bird) | Price (£) -->
@@ -17,7 +17,7 @@ Next on: 26^th^ and 27^th^ April.
 <!-- Academic      | 600                  | 700 -->
 <!-- Student       | 400                  | 500 -->
 
-![](../figures/costs1.png)
+<!-- ![](../figures/costs1.png) -->
 
 ## Overview
 
@@ -59,10 +59,39 @@ In terms of content, the **first day** will focus on how the R language works, g
     - OD pair processing to generate geographic desire lines
     - Using the `overline()` function to aggregate routes to create a route network
     
-## Agenda
+## Course materials
 
-- ERP references (e.g. ERP 1.5.2) refer to chapters in Efficient R Programming (Gillespie and Lovelace 2016)
-- IVSDR refers to Introduction to Visualising Spatial Data with R (Lovelace and Cheshire 2015)
+### Printed (core)
+
+- Introduction to Visualising Spatial Data with R (IVSDR for short, available from [github.com/Robinlovelace/Creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R)) provides a foundation in spatial data analysis with R (Lovelace and Cheshire 2015).
+
+- Simple Features for Geographic Data: an Introduction (SFGDI for short) provides a short overview of Simple Features, including use of **dplyr**.
+
+- **stplanr**: A package for Transport Planning (stplanr-paper for short, available from [github.com/ropensci/stplanr](https://github.com/ropensci/stplanr/blob/master/vignettes/stplanr-paper.Rmd)), a detailed account of how to use spatial data in R as part of a transport planning workflow.
+
+### Online and local resources (optional)
+
+- Efficient R Programming: (ERP for short, with section numbers linked e.g. ERP 1.5.2) is a book and online resource (at [csgillespie.github.io/efficientR](https://csgillespie.github.io/efficientR)) on using R effectively (Gillespie and Lovelace 2016).
+
+- Introducing stplanr: an introductory vignette on **stplanr**, accessible via the following command (assuming **stplanr** is installed):
+
+```{r, eval=FALSE}
+vignette("introducing-stplanr")
+```
+
+- R for Data Science (R4DS): A book and online resource we use to teach R objects (also of wider insterest): http://r4ds.had.co.nz
+
+- sf1: The first vignette from the **sf** package, loaded with the following command:
+
+```{r, eval=FALSE}
+vignette("sf1")
+```
+
+- Visualising spatial data: from R to shiny, an overview of (VSD for short) visualisation methods for spatial data in R, with transport examples. Available from [github.com/Robinlovelace/Creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/vignettes/vspd-base-shiny.md)
+
+- Point pattern analysis and spatial interpolation with R: a tutorial using cycle hire schemes in London to demonstrate methods for point pattern analys. Available from [github.com/Robinlovelace/Creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/vignettes/point-pattern.md)
+
+## Agenda
 
 ### Day 1: Intermediate R and the basics of R for transport data
 
