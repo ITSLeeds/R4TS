@@ -48,9 +48,9 @@ knitr::include_graphics("Images/UK Data Service.png")
 
 ## Recommended sites for transport data
 
+- OSM for GPS AND transport infrastructure data: http://wiki.openstreetmap.org/wiki/Downloading_data
 - Wicid for open orgin-destination data: http://wicid.ukdataservice.ac.uk/
 - Official boundary is very important - can be found on OSM in some places but in the UK best from the 'geoportal': http://geoportal.statistics.gov.uk/
-- OSM for GPS AND transport infrastructure data: http://wiki.openstreetmap.org/wiki/Downloading_data
 - Many local and national authorities, e.g TfL: https://tfl.gov.uk/info-for/open-data-users/
 - Academic research projects, e.g. the Propensity to Cycle Tool (PCT): http://pct.bike/manual.html
 
