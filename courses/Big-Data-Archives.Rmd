@@ -1,6 +1,6 @@
 ---
 title: "Big Data Archives"
-author: "Craig Morton and Robin Lovelace"
+author: "Craig Morton"
 date: "`r Sys.Date()`"
 output: 
   ioslides_presentation:
@@ -54,7 +54,9 @@ knitr::include_graphics("Images/UK Data Service.png")
 - Many local and national authorities, e.g TfL: https://tfl.gov.uk/info-for/open-data-users/
 - Academic research projects, e.g. the Propensity to Cycle Tool (PCT): http://pct.bike/manual.html
 
-## Challenge: download and visualise some large datasets (10 MB+)
+## Optional challenge: find some large datasets (10 MB+)
+
+Things to consider:
 
 > - Ensure your dataset is different from your neighbours'
 > - How did you search for your dataset?
