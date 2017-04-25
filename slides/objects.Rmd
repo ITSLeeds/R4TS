@@ -1,0 +1,260 @@
+---
+title: "Objects, functions and concepts for efficient R programming"
+author: "Robin Lovelace, University of Leeds, \n `r Sys.Date()`"
+date: "Slides: [rpubs.com/RobinLovelace](http://rpubs.com/RobinLovelace)"
+output:
+  ioslides_presentation:
+    widescreen: true
+    transition: slower
+    logo: ../figures/its-logo-square.png
+---
+
+
+## R as a giant calculator
+
+```{r, eval=FALSE}
+5 * 5
+```
+
+```{r, eval=FALSE}
+1 + 4 * 5
+```
+
+```{r, eval=FALSE}
+4 * 5 ^ 2
+```
+
+```{r, eval=FALSE}
+sin(90)
+```
+
+```{r, eval=FALSE}
+sin(0.5 * pi)
+```
+
+```{r, eval=FALSE, echo=FALSE}
+sin(90 * pi / 180)
+```
+
+## Objects
+
+```{r}
+a <- 1
+b <- 2
+c <- "c"
+x_thingy <- 4
+```
+
+```{r, eval=FALSE}
+a + b
+a * b
+a + c
+a / x_thingy
+```
+
+## Adding and removing objects
+
+```{r}
+ls()
+x <- x_thingy
+rm(x_thingy)
+x
+ls()
+```
+
+
+## Harmonograph example
+
+```{r, echo=FALSE, warning=FALSE}
+t <- 1:1000 / 10
+x <- sin(t) * exp(t * - 0.01)
+y <- sin(pi / 2 + t / 3) * exp(t * -0.01)
+plot(x, y, "lines")
+```
+
+## Practical 1: Getting used to RStudio and R
+
+> - Open RStudio and have a look around
+> - Create a new project
+> - Create a new R Script: pass code to the console with `Ctl-Enter`
+> - Use R as a calculator: what is:
+
+$$
+\pi * 9.15^2
+$$
+
+> - Explore each of the 'panes'
+> - Find and write down some useful shortcuts (`Alt-Shift-K` on Windows/Linux)
+
+# Basic R functions and behaviour
+
+## Functions and objects
+
+**In R:**
+
+- Everything that exists is an object
+- Everything that happens is a function
+
+```{r}
+# Assignment of x
+x <- 5
+x
+```
+
+```{r, eval=FALSE}
+# A trick to print x
+(x <- 5)
+```
+
+```{r, eval=FALSE}
+(y <- x)
+```
+
+## Functions
+
+```{r}
+sin(x)
+exp(x)
+factorial(x)
+sinx <- sin(x)
+```
+
+## Assignment
+
+```{r}
+x = 5 # the same as x <- 5
+(x = x + 1)
+```
+
+
+
+## R is vector based
+
+```{r}
+x <- c(1, 2, 5)
+x
+x^2
+x + 2
+```
+
+```{r, eval=FALSE}
+x + rev(x)
+```
+
+## The classic programming way: verbose
+
+```{r}
+x <- c(1, 2, 5)
+for(i in x){
+  print(i^2)
+}
+```
+
+Creating a new vector based on `x`
+
+```{r}
+for(i in 1:length(x)){
+  if(i == 1) x2 <- x[i]^2
+  else x2 <- c(x2, x[i]^2)
+}
+x2
+```
+
+## Data types
+
+R has a hierarchy of data classes, tending to the lowest:
+
+- Binary
+- Integer (numeric)
+- Double (numeric)
+- Character
+
+## Examples of data types
+
+```{r}
+a <- TRUE
+b <- 1:5
+c <- pi
+d <- "Hello Leeds"
+```
+
+```{r, eval=FALSE}
+class(a)
+class(b)
+class(c)
+class(d)
+```
+
+## Data type switching
+
+```{r}
+ab <- c(a, b)
+ab
+class(ab)
+```
+
+
+## Test on data types
+
+```{r}
+class(c(a, b))
+class(c(a, c))
+class(c(b, d))
+```
+
+## Sequences
+
+```{r}
+x <- 1:5
+y <- 2:6
+plot(x, y)
+```
+
+## Sequences with seq
+
+```{r}
+x <- seq(1,2, by = 0.2)
+length(x)
+x <- seq(1, 2, length.out = 5)
+length(x)
+```
+
+## Practical: 45 minutes
+
+Working through Chapter 20 of *R for Data Science*: http://r4ds.had.co.nz/vectors.html
+
+- Work through 20.3
+
+- Challenge: create an atomic vector of 3 characters and an `NA`
+
+- Challenge: create an atomic vector of 5 numeric vectors
+
+```{r, echo=FALSE}
+x = 1:5
+# class(x)
+x = c(1:4, 4.9999999)
+# class(x)
+```
+
+- Challenge: create a list containing logical, character and numeric vectors
+    - What happens to the class if you *unlist* this list?
+
+```{r, echo=FALSE, eval=FALSE}
+l = list(TRUE, "yes", 5.5)
+# unlist(l)
+```
+
+- Complete all the code examples in 20.4
+    - Challenge: what are the outcomes of the following commands?:
+    
+```{r, eval=FALSE}
+x = 1:10
+x[c(1, NA)]
+x[2 * 3]
+x[-2 * 3]
+```
+
+
+
+
+
