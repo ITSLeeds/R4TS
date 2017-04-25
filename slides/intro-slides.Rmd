@@ -1,5 +1,5 @@
 ---
-title: "Introduction to R and RStudio"
+title: "R for Transport Applications: Handling Big Data in a Spatial World"
 author: "Robin Lovelace, University of Leeds, \n `r Sys.Date()`"
 date: "Slides: [rpubs.com/RobinLovelace](http://rpubs.com/RobinLovelace)"
 output:
@@ -8,9 +8,31 @@ output:
     transition: slower
     logo: ../figures/its-logo-square.png
 ---
-## Demonstration 1: The RStudio IDE
 
-![](https://support.rstudio.com/hc/en-us/article_attachments/202195467/Screen_Shot_2015-06-25_at_4.57.29_PM.png)
+# Why R for transport applications?
+
+## Features | Source: https://www.r-bloggers.com/on-the-growth-of-cran-packages/
+
+R is an extremely flexible and (with the help of add-on packages) powerful language.
+
+![](http://revolution-computing.typepad.com/files/rplot03.svg)
+
+## Scalability
+
+As datasets have grown, so has the importance of efficient computing.
+
+- R was designed for efficiency - lots of 'leg-work' done in C
+- R is conducive to cloud and parallel computing
+- Easy to parallelise
+
+## Visualisation | source: https://github.com/Robinlovelace/GIS4TA
+
+- Vital for communication
+- Increasingly interactive
+
+![](https://tgrg.files.wordpress.com/2015/04/crispin_map.png)
+
+# The R language
 
 ## R as a giant calculator
 
@@ -26,25 +48,35 @@ output:
 4 * 5 ^ 2
 ```
 
-```{r, eval=FALSE}
-sin(90)
-```
+## Functions and objects
 
-```{r, eval=FALSE}
-sin(0.5 * pi)
-```
+**In R:**
 
-```{r, eval=FALSE, echo=FALSE}
-sin(90 * pi / 180)
+- Everything that exists is an object
+- Everything that happens is a function
+
+E.g., load a data object and find its dimension:
+
+```{r}
+data(mpg, package = "ggplot2") # load the object mpg
+dim(mpg) # use a function (dim) to do something with it
 ```
 
 ## Objects
 
+- R is *object-orientated*
+- Objects persist in memory for the duration of the *session*
+- Objects are usually assigned by the `<-` or `=` operator (usually identical)
+- Any names can be give to R objects, except special characters like `\`
+- Exercise: what do these commands do?
+
+<div class="columns-2">
+
 ```{r}
-a <- 1
-b <- 2
-c <- "c"
-x_thingy <- 4
+a = 1
+b = 2
+c = "c"
+x_thingy = 4
 ```
 
 ```{r, eval=FALSE}
@@ -53,6 +85,8 @@ a * b
 a + c
 a / x_thingy
 ```
+
+</div>
 
 ## Adding and removing objects
 
@@ -64,38 +98,40 @@ x
 ls()
 ```
 
+## Functions
 
-## Harmonograph example
+"R, at its heart, is a functional programming (FP) language. This means that it provides many tools for the creation and manipulation of functions."
 
-```{r, echo=FALSE, warning=FALSE}
-t <- 1:1000 / 10
-x <- sin(t) * exp(t * - 0.01)
-y <- sin(pi / 2 + t / 3) * exp(t * -0.01)
-plot(x, y, "lines")
+- All functions have brackets (to run)
+- The *arguments* of the functions go in the brackets
+
+```{r}
+replicate(n = 3, expr = x)
+exp(x)
 ```
 
-## Practical 1: Getting used to RStudio and R
+
+## Basic plotting
+
+```{r}
+x = 1:9
+y = x^2
+plot(x = x, y =y) 
+```
+
+
+## Demonstration then exercise: Getting used to RStudio and R
 
 > - Open RStudio and have a look around
 > - Create a new project
 > - Create a new R Script: pass code to the console with `Ctl-Enter`
 > - Use R as a calculator: what is:
-
-$$
-\pi * 9.15^2
-$$
-
 > - Explore each of the 'panes'
 > - Find and write down some useful shortcuts (`Alt-Shift-K` on Windows/Linux)
 
-# Basic R functions and behaviour
+# R/RStudio tricks
 
-## Functions and objects
-
-**In R:**
-
-- Everything that exists is an object
-- Everything that happens is a function
+## Printing the result during assignment
 
 ```{r}
 # Assignment of x
@@ -108,27 +144,21 @@ x
 (x <- 5)
 ```
 
-```{r, eval=FALSE}
-(y <- x)
-```
+## The console or the script pane?
 
-## Functions
+- Is it part of a longer story that will ultimately be shared? (use script files)
+- Is it just playing that does not need to be stored? (use the console)
 
-```{r}
-sin(x)
-exp(x)
-factorial(x)
-sinx <- sin(x)
-```
+You can switch effortlessly between them with `Ctl+1` and `Ctl+2`.
 
 ## Assignment
+
+- Be warned: easy to overwrite data
 
 ```{r}
 x = 5 # the same as x <- 5
 (x = x + 1)
 ```
-
-
 
 ## R is vector based
 
@@ -221,3 +251,14 @@ x <- seq(1, 2, length.out = 5)
 length(x)
 ```
 
+## The R ecosystem
+
+![](https://pbs.twimg.com/media/C9uTCbTXUAAa9fD.jpg)
+
+## Choosing packages
+
+... can be hard work!
+
+Fortunately there is
+
+## Exercises
