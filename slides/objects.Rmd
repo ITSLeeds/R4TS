@@ -119,15 +119,6 @@ factorial(x)
 sinx <- sin(x)
 ```
 
-## Assignment
-
-```{r}
-x = 5 # the same as x <- 5
-(x = x + 1)
-```
-
-
-
 ## R is vector based
 
 ```{r}

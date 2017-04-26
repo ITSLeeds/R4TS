@@ -1,0 +1,152 @@
+---
+title: "Data carpentry"
+author: "Robin Lovelace, University of Leeds, \n `r Sys.Date()`"
+date: "Slides: [rpubs.com/RobinLovelace](http://rpubs.com/RobinLovelace)"
+output:
+  ioslides_presentation:
+    widescreen: true
+    transition: slower
+    logo: ../figures/its-logo-square.png
+---
+
+## Why data carpentry?
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Data analysts and &#39;scientists&#39;: don&#39;t wrangle, munge or &#39;hack&#39; your valuable datasets. Use <a href="https://twitter.com/hashtag/datacarpentry?src=hash">#datacarpentry</a>: <a href="https://t.co/gXrlIJH91R">https://t.co/gXrlIJH91R</a> <a href="https://t.co/GSWS7O7zBz">pic.twitter.com/GSWS7O7zBz</a></p>&mdash; Robin Lovelace (@robinlovelace) <a href="https://twitter.com/robinlovelace/status/833622374037721089">February 20, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+- If you 'hack' or 'munge' data, it won't scale
+- So ultimately it's about being able to handle Big Data
+- We'll cover the basics of data frames and tibbles
+- And the basics of **dplyr**, an excellent package for data carpentry
+    - **dplyr** is also compatible with the **sf** package
+
+## The data frame
+
+The humble data frame is at the heart of most analysis projects:
+
+```{r}
+d = data.frame(x = 1:3, y = c("A", "B", "C"))
+d
+```
+
+In reality this is a list, making function work on each column:
+
+```{r}
+summary(d)
+plot(d)
+```
+
+## Subsetting
+
+In base R, there are many ways to subset:
+
+```{r}
+d[1,] # the first line
+d[,1] # the first column
+d$x # the first column
+d [1] # the first column, as a data frame
+```
+
+## The tibble
+
+Recently the data frame has been extended:
+
+```{r}
+library("tibble")
+dt = tibble(x = 1:3, y = c("A", "B", "C"))
+dt
+```
+
+## Advantages of the tibble
+
+It comes down to efficiency and usability
+
+ - When printed, the tibble diff reports class
+ - Character vectors are not coerced into factors
+ - When printing a tibble diff to screen, only the first ten rows are displayed
+ 
+## dplyr
+
+Like tibbles, has advantages over historic ways of doing things
+
+- Type stability (data frame in, data frame out)
+- Consistent functions - functions not `[` do everything
+- Piping make complex operations easy
+
+```{r, eval=FALSE}
+ghg_ems %>%
+  filter(!grepl("World|Europe", Country)) %>% 
+  group_by(Country) %>% 
+  summarise(Mean = mean(Transportation),
+            Growth = diff(range(Transportation))) %>%
+  top_n(3, Growth) %>%
+  arrange(desc(Growth))
+```
+
+```{r}
+# dplyr must be loaded with
+library(dplyr)
+```
+
+
+## Why pipes?
+
+```{r, eval=FALSE}
+wb_ineq %>% 
+  filter(grepl("g", Country)) %>%
+  group_by(Year) %>%
+  summarise(gini = mean(gini, na.rm  = TRUE)) %>%
+  arrange(desc(gini)) %>%
+  top_n(n = 5)
+```
+
+vs
+
+```{r, eval=FALSE}
+top_n(
+  arrange(
+    summarise(
+      group_by(
+        filter(wb_ineq, grepl("g", Country)),
+        Year),
+      gini = mean(gini, na.rm  = TRUE)),
+    desc(gini)),
+  n = 5)
+```
+
+## Subsetting with dplyr
+
+Only 1 way to do it, making life simpler:
+
+```{r}
+select(dt, x) # select columns
+slice(dt, 2) # 'slice' rows
+```
+
+
+## Practical prerequisites
+
+You'll need the `efficient` package installed:
+
+```{r, eval=FALSE}
+devtools::install_github("csgillespie/efficient")
+```
+
+
+These are the packages we'll be using:
+
+```{r, eval=FALSE}
+library("tibble")
+library("tidyr")
+library("stringr")
+library("readr")
+library("dplyr")
+```
+
+## Practical
+
+- Test out tibbles with [ERP 6.2](https://csgillespie.github.io/efficientR/data-carpentry.html#efficient-data-frames-with-tibble) (15 minutes)
+- Tidy data is vital for good data carpentry. Work through the tidying code in section [6.3](https://csgillespie.github.io/efficientR/data-carpentry.html#tidying-data-with-tidyr-and-regular-expressions) (30 minutes)
+- Work through in detail [Section 6.4 on dplyr](https://csgillespie.github.io/efficientR/data-carpentry.html#dplyr)
+- Work through the code examples in Efficient R Programming (45 minutes)
+- Bonus (if time allows): look at how to merge datasets with `left_join()` in [Section 6.5](https://csgillespie.github.io/efficientR/data-carpentry.html#combining-datasets) (15 minutes)

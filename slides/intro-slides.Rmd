@@ -9,6 +9,63 @@ output:
     logo: ../figures/its-logo-square.png
 ---
 
+## An overview of the course
+
+The questions we'll be tackling:
+
+- How to effectively handle large transport datasets?
+- Where to locate new transport infrastructure? 
+- How to develop automated and reproducible transport planning workflows?
+- How can increasingly available datasets on air quality, traffic and active travel be used to inform policy?
+- How to visualise results in an attractive and potentially on-line and interactive manner?
+
+## Day 1
+
+- Learn and consolidate the basics of R's syntax
+- Discover time-saving tips for efficient programming
+- Discover how add-on R packages such as **dplyr** can be used to improve productivity
+- Understand how R can be used to read, process and save transport-related datasets
+- Understand the structure of spatial data in R
+
+## Day 2
+
+
+- Be able to query, subset and analyse spatial objects
+- Have a working knowledge of fundamental GIS functions such as changing projections
+- Be proficient in the use of R to create maps using add-on packages such as **tmap**
+- Have some experience with transport planning functions provided by **stplanr**
+    - Route allocation
+    - OD pair processing to generate geographic desire lines
+    - Using the `overline()` function to aggregate routes to create a route network
+
+## Agenda | see github.com/ITSLeeds/R4TS
+
+- Day 1: Building strong foundations
+    - R and RStudio
+    - Objects, functions, concepts
+    - Getting data into R
+    - Data carpentry 
+    - Spatial data
+
+- Day 2: R for transport applications
+    - Transport data with **stplanr**
+    - Air pollution analysis with **openair**
+    - Application to your own datasets
+    
+## Resources
+
+The course website/wiki is [github.com/ITSLeeds/R4TS](https://github.com/ITSLeeds/R4TS)
+
+- Course overview: in the [courses](https://github.com/ITSLeeds/R4TS/tree/master/courses) folder
+- Slides: Available from [rpubs.com/robinlovelace](http://rpubs.com/RobinLovelace/) and the [slides](https://github.com/ITSLeeds/R4TS/tree/master/slides) folder
+- Printed material:
+    - Introduction to Visualising Spatial Data with R
+    - Simple Features for Geographic Data: an Introduction
+    - **stplanr**: A package for Transport Planning (stplanr-paper for short, available from [github.com/ropensci/stplanr](https://github.com/ropensci/stplanr/blob/master/vignettes/stplanr-paper.Rmd)), a detailed account of how to use spatial data in R as part of a transport planning workflow.
+    
+- Online material: see [GIS4ta-outline.Rmd](https://github.com/ITSLeeds/R4TS/blob/master/courses/GIS4ta-outline.Rmd) in the courses folder
+
+
 # Why R for transport applications?
 
 ## Features | Source: https://www.r-bloggers.com/on-the-growth-of-cran-packages/
@@ -30,7 +87,10 @@ As datasets have grown, so has the importance of efficient computing.
 - Vital for communication
 - Increasingly interactive
 
-![](https://tgrg.files.wordpress.com/2015/04/crispin_map.png)
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("https://tgrg.files.wordpress.com/2015/04/crispin_map.png")
+```
+
 
 # The R language
 
@@ -160,105 +220,41 @@ x = 5 # the same as x <- 5
 (x = x + 1)
 ```
 
-## R is vector based
-
-```{r}
-x <- c(1, 2, 5)
-x
-x^2
-x + 2
-```
-
-```{r, eval=FALSE}
-x + rev(x)
-```
-
-## The classic programming way: verbose
-
-```{r}
-x <- c(1, 2, 5)
-for(i in x){
-  print(i^2)
-}
-```
-
-Creating a new vector based on `x`
-
-```{r}
-for(i in 1:length(x)){
-  if(i == 1) x2 <- x[i]^2
-  else x2 <- c(x2, x[i]^2)
-}
-x2
-```
-
-## Data types
-
-R has a hierarchy of data classes, tending to the lowest:
-
-- Binary
-- Integer (numeric)
-- Double (numeric)
-- Character
-
-## Examples of data types
-
-```{r}
-a <- TRUE
-b <- 1:5
-c <- pi
-d <- "Hello Leeds"
-```
-
-```{r, eval=FALSE}
-class(a)
-class(b)
-class(c)
-class(d)
-```
-
-## Data type switching
-
-```{r}
-ab <- c(a, b)
-ab
-class(ab)
-```
-
-
-## Test on data types
-
-```{r}
-class(c(a, b))
-class(c(a, c))
-class(c(b, d))
-```
-
-## Sequences
-
-```{r}
-x <- 1:5
-y <- 2:6
-plot(x, y)
-```
-
-## Sequences with seq
-
-```{r}
-x <- seq(1,2, by = 0.2)
-length(x)
-x <- seq(1, 2, length.out = 5)
-length(x)
-```
-
 ## The R ecosystem
 
 ![](https://pbs.twimg.com/media/C9uTCbTXUAAa9fD.jpg)
 
 ## Choosing packages
 
-... can be hard work!
+- With [so many packages](http://blog.revolutionanalytics.com/2017/01/cran-10000.html), simply choosing the right package can be hard work!
+- Fortunately there are well-known ways to decide on which package to use (see [section 4.4 of Efficient R Programming](https://csgillespie.github.io/efficientR/workflow.html#package-selection)):
+    - Is it mature?
+    - Is it actively developed?
+    - Is it well documented?
+    - Is it well used?
+- It's worth spending the time thinking about this: can save you hours later on
 
-Fortunately there is
+## Getting help
 
-## Exercises
+- As described in [Chapter 10 of Efficient R Programming](https://csgillespie.github.io/efficientR/learning.html), one of the most important R programming skills is *learning how to learn*
+- A great advantage of R is its strong community
+- R's internal documentation is terse but good - try this:
+
+```{r, eval=FALSE}
+?plot
+vignette("plotexample")
+```
+
+- It's worth being aware of different help forums:
+    - [stackoverflow.com/](http://stackoverflow.com/) and related sites such as [gis.stackexchange.com/](https://gis.stackexchange.com/)
+    - [Email lists](https://www.r-project.org/mail.html) such as [r-sig-geo](https://stat.ethz.ch/mailman/listinfo/r-sig-geo)
+    - Increasingly: GitHub issue
+    - Good old fashioned email
+
+
+## Exercises (in groups)
+
+- Think about the kind of data and analysis you'll be using R for
+- Which packages have you be using to date? (if any)
+- Find 3 packages that could help: think about pros and cons
+- What are the alternatives to R for this work?
