@@ -35,5 +35,21 @@ b[sel]
 sel = c(T, F, T, F, F)
 b[sel]
 
-9
-float = 9 %% 4
+# Tip: Ctl-Shift-F searches through all files
+# That is what found the code needed to download
+# files for the next session:
+u = "https://github.com/Robinlovelace/Creating-maps-in-R/archive/master.zip"
+download.file(u, "master.zip")
+unzip("master.zip")
+list.files("Creating-maps-in-R-master/data/") # it worked
+
+# data from visualisation tutorial:
+u = "https://github.com/Robinlovelace/vspd-base-shiny-data/archive/master.zip"
+download.file(u, destfile = "master.zip")
+list.files(path = "vspd-base-shiny-data-master/", full.names = T) # check data is there
+
+old_dir = setwd("Creating-maps-in-R-master/data/") # save old directory
+library(rgdal)
+lnd = readOGR("london_sport.shp")
+plot(lnd)
+setwd(old_dir) # switch back to original directory!
