@@ -245,7 +245,12 @@ x[2 * 3]
 x[-2 * 3]
 ```
 
+## Data loading practical
 
+- Run the code in `download-data.R`
+- Check that the files have downloaded and unzipped OK
+    - If so: you've used R as a file manager!
+- Work through pages 4, 5 and 6 in the Creating-maps-in-R tutorial
 
 
 
