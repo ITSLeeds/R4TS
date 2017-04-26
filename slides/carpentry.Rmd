@@ -88,7 +88,6 @@ ghg_ems %>%
 library(dplyr)
 ```
 
-
 ## Why pipes?
 
 ```{r, eval=FALSE}
