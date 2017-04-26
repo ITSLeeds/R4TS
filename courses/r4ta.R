@@ -9,3 +9,4 @@ u = "https://github.com/Robinlovelace/Creating-maps-in-R/archive/master.zip"
 download.file(u, "master.zip")
 unzip("master.zip") # from here you'll be able to open and use the .Rproj file
 
+# how to change projection?
