@@ -57,3 +57,15 @@ plot(lnd)
 setwd(old_dir) # switch back to original directory!
 library(mapview)
 mapview(lnd)
+
+library(ggplot2)
+data("mpg")
+m = as.data.frame(mpg)
+class(mpg)
+m
+mpg
+
+# To get the pew dataset if efficient does not install:
+u_pew = "https://github.com/csgillespie/efficient/raw/master/data/pew.rda"
+download.file(u_pew, "pew.rda")
+load("pew.rda")
