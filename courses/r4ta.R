@@ -22,3 +22,18 @@ library(sp)
 ?plot
 vignette("plotexample") # long from documentation
 install.packages("geoBayes") # install a new package
+
+a = "hello"
+b = 1:5
+
+ab = c(a, b)
+as.numeric(ab)
+d = 3
+d == 2
+sel = b %in% d
+b[sel]
+sel = c(T, F, T, F, F)
+b[sel]
+
+9
+float = 9 %% 4
