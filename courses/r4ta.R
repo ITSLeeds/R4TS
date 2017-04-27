@@ -68,4 +68,29 @@ mpg
 # To get the pew dataset if efficient does not install:
 u_pew = "https://github.com/csgillespie/efficient/raw/master/data/pew.rda"
 download.file(u_pew, "pew.rda")
-load("pew.rda")
+load("u_pew")
+
+df = readxl::read_excel("~/cyipt/icicle/applications/dft-2017/rawDocs/Copy of RL Costs v4-1.xls")
+
+
+library(stplanr)
+data("flowlines")
+plot(flowlines)
+cents # comes with stplanr
+sel = cents$geo_code %in% flow$Area.of.residence[4]
+cents[sel,]
+
+r = route_cyclestreet(from = "Harrogate", to = "Leeds, UK", silent = F)
+r_quiet = route_cyclestreet(from = "Harrogate", to = "Leeds, UK", silent = F, plan = "quietest")
+
+library(leaflet)
+leaflet() %>% 
+  addTiles() %>% 
+  addPolylines(data =r) %>% 
+  addPolylines(data = r_quiet, color = "green")
+r_quiet$length
+
+install.packages("OpenStreetMap")
+install.packages("tmap")
+?qtm
+?tm_lines
