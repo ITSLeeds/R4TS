@@ -94,3 +94,13 @@ install.packages("OpenStreetMap")
 install.packages("tmap")
 ?qtm
 ?tm_lines
+
+f_one = onewayid(flowlines, attrib = "All")
+nrow(f_one)
+nrow(flowlines)
+
+plot(f_one, lwd = f_one$All / 5)
+plot(flowlines, lwd = flowlines$All / 5, col = "white", add = T)
+
+# link for feedback:
+https://leeds.onlinesurveys.ac.uk/rtransport-2017
