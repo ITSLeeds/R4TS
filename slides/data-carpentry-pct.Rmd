@@ -122,28 +122,85 @@ select(dt, x) # select columns
 slice(dt, 2) # 'slice' rows
 ```
 
-## Practical prerequisites
+# How we've used this in the PCT
 
-You'll need the `efficient` package installed:
+## Worked example: pct data in West Yorksire
 
-```{r, eval=FALSE}
-devtools::install_github("csgillespie/efficient")
+- We'll download and visualise some transport data
+
+```{r}
+# u_pct = "https://github.com/npct/pct-data/raw/master/west-yorkshire/l.Rds"
+# download.file(u_pct, "l.Rds")
+library(stplanr)
+l = readRDS("l.Rds")
+plot(l)
 ```
 
-These are the packages we'll be using:
+## Analysing where people walk
 
-```{r, eval=FALSE}
-library("tibble")
-library("tidyr")
-library("stringr")
-library("readr")
-library("dplyr")
+```{r}
+sel_walk = l$foot > 9
+l_walk = l[sel_walk,]
+plot(l)
+plot(l_walk, add = T, col = "red")
+
+library(dplyr) # for next slide...
 ```
 
-## Practical
+## Doing it with sf (!)
 
-- Test out tibbles with [ERP 6.2](https://csgillespie.github.io/efficientR/data-carpentry.html#efficient-data-frames-with-tibble) (15 minutes)
-- Tidy data is vital for good data carpentry. Work through the tidying code in section [6.3](https://csgillespie.github.io/efficientR/data-carpentry.html#tidying-data-with-tidyr-and-regular-expressions) (30 minutes)
-- Work through in detail [Section 6.4 on dplyr](https://csgillespie.github.io/efficientR/data-carpentry.html#dplyr)
-- Work through the code examples in Efficient R Programming (45 minutes)
-- Bonus (if time allows): look at how to merge datasets with `left_join()` in [Section 6.5](https://csgillespie.github.io/efficientR/data-carpentry.html#combining-datasets) (15 minutes)
+```{r, eval=FALSE}
+l_walk1 = l %>% filter(All > 10) # fails
+```
+
+```{r}
+library(sf)
+l_sf = st_as_sf(l)
+plot(l_sf[6])
+```
+
+## Subsetting with sf | much easier
+
+```{r, eval=FALSE}
+l_walk2 = l_sf %>% 
+  filter(foot > 9)
+plot(l_sf[6])
+plot(l_walk2, add = T)
+```
+
+## Subsetting with sf | results
+
+```{r, echo=FALSE}
+l_walk2 = l_sf %>% 
+  filter(foot > 9)
+
+# plot the result
+plot(l_sf[6])
+plot(l_walk2, add = T)
+```
+
+## A more advanced example
+
+```{r}
+l_sf$distsf = as.numeric(st_length(l_sf))
+l_drive_short2 = l_sf %>% 
+  filter(distsf < 1000) %>% 
+  filter(car_driver > foot)
+```
+
+## Result: where people drive short distances rather than drive
+
+```{r}
+library(tmap)
+tmap_mode("view")
+qtm(l_drive_short2)
+```
+
+## Overall results: the [PCT](http://pct.bike/)
+
+```{r, echo=FALSE}
+knitr::include_graphics("https://previews.magnoliabox.com/corbis/flat/42-32403684/MUS-FAPC2020_500.jpg")
+```
+
+
+

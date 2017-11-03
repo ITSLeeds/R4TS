@@ -1,5 +1,5 @@
 ---
-title: "Handling Transport data"
+title: "Data carpentry for sustainable transport planning: the Propensity to Cycle Tool"
 author: "Robin Lovelace, University of Leeds, \n `r Sys.Date()`"
 date: "Slides: [rpubs.com/RobinLovelace](http://rpubs.com/RobinLovelace)"
 output:

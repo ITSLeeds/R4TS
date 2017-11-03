@@ -1,7 +1,7 @@
 ---
-title: "Intermediate and Advanced R for Spatial Data Analysis"
+title: "Computing skills: an introduction to R for researchers new to the language"
 author: "Robin Lovelace, University of Leeds, \n `r Sys.Date()`"
-date: "Slides: [rpubs.com/RobinLovelace](http://rpubs.com/RobinLovelace)"
+date: "Slides: [github.com/ITSLeeds/R4TS](https://github.com/ITSLeeds/R4TS)"
 output:
   ioslides_presentation:
     widescreen: true
@@ -9,56 +9,32 @@ output:
     logo: ../figures/its-logo-square.png
 ---
 
-## An overview of the course
+## Overview
 
-Topics covered:
+- An introduction to R and applications (Lecture ~30 minutes)
+    - R in context (see the[ Wiki page](https://en.wikipedia.org/wiki/R_(programming_language))), [R for Data Science](http://r4ds.had.co.nz/)
 
-- Use R effectively in research
-- Automated and reproducible workflows
-- Manipulate non-spatial data: data carpentry
-- Find, download, load and save geographic data
-- Manipulate spatial data: geographical subsetting, aggregation and joining
-- Visualise your work in attractive and potentially on-line way
-- An introduction to geographical modelling
+- Spatial data and the '[tidyverse](http://robinlovelace.net/presentations/spatial-tidyverse.html#1)' (~30 minutes)
 
-## Day 1
+- Practical: Attribute data operations (Practical ~120 minutes)
+    - See Chapter 3 of [Geocomputation with R](http://robinlovelace.net/geocompr/attr.html)
+    - And 17 exercises at the end
 
-- Learn and consolidate the basics of R's syntax
-- Discover time-saving tips for efficient programming
-- Discover how add-on R packages such as **dplyr** can be used to improve productivity
-- Understand how R can be used to read, process and save a wide variety of datasets
-- Understand the structure of spatial data in R
+- Advanced challenge (optional): Cycle infrastructure, short car journeys and green space in a city of your choice (30 minute)
+    - Go to http://www.pct.bike/, go to Region Data and download data
+    - Make some maps and summarise the data data
+    - Where are the most short car trips in the region?
+    - What % of routes pass within 500 m of a park?
 
-## Day 2
+## Further resources (from easy to hard)
 
-
-- Be able to query, subset and analyse spatial objects
-- Have a working knowledge of fundamental GIS functions such as changing projections
-- Be proficient in the use of R to create maps using add-on packages such as **tmap**
-
-## Day 3
-
-- Advanced applications
-- Raster data
-- Point pattern analysis
-- Have some experience with transport planning functions provided by **stplanr**
-    - Route allocation
-    - OD pair processing to generate geographic desire lines
-    - Using the `overline()` function to aggregate routes to create a route network
-
-## Agenda | see github.com/ITSLeeds/R4TS
-
-- Day 1: Building strong foundations
-    - R and RStudio
-    - Objects, functions, concepts
-    - Getting data into R
-    - Data carpentry 
-    - Spatial data
-
-- Day 2: R for transport applications
-    - Transport data with **stplanr**
-    - Air pollution analysis with **openair**
-    - Application to your own datasets
+- R for Data Science: http://r4ds.had.co.nz/
+- An introduction to stplanr (R vignette): https://cran.r-project.org/web/packages/stplanr/vignettes/introducing-stplanr.html
+- stplanr: a package for transport planning: https://cran.r-project.org/web/packages/stplanr/vignettes/stplanr-paper.html
+- Geocomputation with R (work in progress book): http://robinlovelace.net/geocompr/
+- An introduction to GitHub for learning and research: https://github.com/jfiksel/github-classroom-for-students
+- A blog about the bikedata package (also see dodgr/stplanr): https://ropensci.org/blog/2017/10/17/bikedata/
+- Want more data access? See here: http://robinlovelace.net/geocompr/read-write.html
     
 ## Resources
 
@@ -71,8 +47,6 @@ The course website/wiki is [github.com/ITSLeeds/R4TS](https://github.com/ITSLeed
     - Simple Features for Geographic Data: an Introduction
     - **stplanr**: A package for Transport Planning (stplanr-paper for short, available from [github.com/ropensci/stplanr](https://github.com/ropensci/stplanr/blob/master/vignettes/stplanr-paper.Rmd)), a detailed account of how to use spatial data in R as part of a transport planning workflow.
     
-- Online material: see [GIS4ta-outline.Rmd](https://github.com/ITSLeeds/R4TS/blob/master/courses/GIS4ta-outline.Rmd) in the courses folder
-
 
 # Why R?
 
