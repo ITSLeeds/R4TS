@@ -1,6 +1,6 @@
 ---
 output:
-  word_document: default
+  # word_document: default
   html_document: default
 ---
 
@@ -11,11 +11,11 @@ output:
 <!-- Next on: 26^th^ and 27^th^ April. -->
 
 
-<!-- Delegate type | Price (£ early bird) | Price (£) -->
-<!-- --------------|:---------------------|:--------- -->
-<!-- External      | 800                  | 900 -->
-<!-- Academic      | 600                  | 700 -->
-<!-- Student       | 400                  | 500 -->
+Delegate type | Price (£ early bird) | Price (£)
+--------------|:---------------------|:---------
+External      | 800                  | 900
+Academic      | 600                  | 700
+Student       | 400                  | 500
 
 <!-- ![](../figures/costs1.png) -->
 
@@ -30,7 +30,7 @@ This course teaches two skill-sets that are fundamental in modern transport rese
 - How to visualise results in an attractive and potentially on-line and interactive manner?
 
 This course will provide tools, example code and data and above all face-to-face teaching to empower participants with new software to answer these questions and more.
-The focus is on the programming language R (we will briefly look at visualising results in QGIS). However, the principles and skills learned will be cross-transferable to other languages. By providing strong foundations in spatial data handling and the use of an up-coming language for statistical computing, R for Transport Applications aims to open a world of possibilities for generating insight from your transport datasets for researchers in the public sector, academia and industry alike.
+The focus is on the programming language R. However, the principles and skills learned will be cross-transferable to other languages. By providing strong foundations in spatial data handling and the use of an up-coming language for statistical computing, R for Transport Applications aims to open a world of possibilities for generating insight from your transport datasets for researchers in the public sector, academia and industry alike.
 
 As with any language, it is important to gain a strong understanding
 of the underlying syntax and structure before moving on to complex uses. 
@@ -47,12 +47,11 @@ In terms of content, the **first day** will focus on how the R language works, g
 - Discover time-saving tips for efficient programming
 - Discover how add-on R packages such as **dplyr** can be used to improve productivity
 - Understand how R can be used to read, process and save transport-related datasets
-- Understand the structure of spatial data in R
+- Understand the structure of spatial data in R, including projections
 
 ### Day 2:
 
-- Be able to query, subset and analyse spatial objects
-- Have a working knowledge of fundamental GIS functions such as changing projections
+- Downloading and processing route network data from OpenStreetMap
 - Be proficient in the use of R to create maps using add-on packages such as **tmap**
 - Have some experience with transport planning functions provided by **stplanr**
     - Route allocation
