@@ -56,8 +56,8 @@ plot(l_sf[6])
 ```{r}
 l_walk2 = l_sf %>% 
   filter(foot > 9)
-plot(l_sf[6])
-plot(l_walk2, add = T)
+plot(l_sf$geometry)
+plot(l_walk2$geometry, add = T, col = "green")
 ```
 
 

@@ -1,4 +1,4 @@
-# Handling Transport data
+# Data carpentry for sustainable transport planning: the Propensity to Cycle Tool
 Robin Lovelace, University of Leeds, 
  `r Sys.Date()`  
 Slides: [rpubs.com/RobinLovelace](http://rpubs.com/RobinLovelace)  
@@ -77,7 +77,7 @@ library(sf)
 ```
 
 ```
-## Linking to GEOS 3.5.1, GDAL 2.1.3, proj.4 4.9.2, lwgeom 2.3.2 r15302
+## Linking to GEOS 3.5.1, GDAL 2.2.1, proj.4 4.9.2, lwgeom 2.3.3 r15473
 ```
 
 ```r
@@ -93,8 +93,8 @@ plot(l_sf[6])
 ```r
 l_walk2 = l_sf %>% 
   filter(foot > 9)
-plot(l_sf[6])
-plot(l_walk2, add = T)
+plot(l_sf$geometry)
+plot(l_walk2$geometry, add = T, col = "green")
 ```
 
 ![](handling-transport-data_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
@@ -160,9 +160,26 @@ library(osmdata)
 ```r
 q = opq(bbox = "Leeds") %>% 
   add_feature(key = "railway", value = "station")
+```
+
+```
+## add_feature() is deprecated; please use add_osm_feature()
+```
+
+```r
 stations = osmdata_sf(q = q)
 plot(l_sf[6])
-plot(stations$osm_points, add = T)
 ```
 
 ![](handling-transport-data_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+
+```r
+plot(stations$osm_points, add = T)
+```
+
+```
+## Warning in plot.sf(stations$osm_points, add = T): ignoring all but the
+## first attribute
+```
+
+![](handling-transport-data_files/figure-html/unnamed-chunk-8-2.png)<!-- -->
