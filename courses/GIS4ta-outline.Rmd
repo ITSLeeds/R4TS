@@ -23,8 +23,7 @@ Student       | 400                  | 500
 
 This course teaches two skill-sets that are fundamental in modern transport research: programming and data analytics, with a focus on spatial data. Combining these enables powerful transport planning and analysis workflows for tackling a wide range of problems, including:
 
-- How to effectively handle large transport datasets?
-- Where to locate new transport infrastructure? 
+- How to find, download and import a range of transport datasets?
 - How to develop automated and reproducible transport planning workflows?
 - How can increasingly available datasets on air quality, traffic and active travel be used to inform policy?
 - How to visualise results in an attractive and potentially on-line and interactive manner?
@@ -53,10 +52,11 @@ In terms of content, the **first day** will focus on how the R language works, g
 
 - Downloading and processing route network data from OpenStreetMap
 - Be proficient in the use of R to create maps using add-on packages such as **tmap**
-- Have some experience with transport planning functions provided by **stplanr**
-    - Route allocation
-    - OD pair processing to generate geographic desire lines
-    - Using the `overline()` function to aggregate routes to create a route network
+- Learn how to undertake specific transport planning tasks, including:
+    - Formatting and processing origin-destination (OD) data
+    - OD pair processing generate geographic desire lines
+    - Route allocation using different routing services
+    - Route network generation
     
 ## Course materials
 
