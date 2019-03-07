@@ -1,0 +1,19 @@
+2 day course in London. Draft contents:
+
+
+Day 1:
+
+Introduction to R/RStudio
+
+- How to use R/RStudio effectively
+- Using packages: example with sf/ggplot2 (tbc)
+- The structure of spatial objects in R
+- Temporal data with stats19 data example
+- Visualising spatial datasets
+
+Day 2:
+
+- stats19 data analysis
+- OD data with stplanr
+- Data and methods for assessing cycling potential
+- Local route network analysis 
