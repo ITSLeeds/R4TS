@@ -1,19 +1,77 @@
-2 day course in London. Draft contents:
+# 2 day course: R for Spatial Transport Data
 
+Assumed prior knowledge:
+
+- Some knowledge of tidyverse is highly recommended, e.g. already know or have read 
+
+<!-- **It's in the Analysis directorate** -->
+
+
+## Computing Requirements
+
+- DfT will provide desktops with recent versions of R and RStudio installed, including:
+  - RStudio 3.5.3 recommended (although any R 3.5 release should work): https://cran.r-project.org/
+  - Will require up-to-date versions of **tidyverse** and **sf** packages, at a minimum
+  - Other packages we'll use:
+    - stats19
+    - stplanr
+    - tmap
+    - devtools
+    - The GitHub package spDataLarge, which can be installed as follows:
+    
+```{r, eval=FALSE}
+devtools::install_github("Nowosad/spDataLarge")
+```
+
+- Own laptops allowed, provided necessary data is installed
+
+- Data: all data will be either provided by packages or downloaded on the day (assuming good internet)
+  - A test to check if data downloads work is accessing stats19 data (check this works):
+
+```{r, eval=FALSE}
+crashes = stats19::get_stats19(year = 2017, type = "accidents", ask = FALSE)
+```
+
+- A script to test set-up will be provided to test it all works
+
+## Venue and course times
+
+Venue: near DfT HQ at Horseferry road, TBC
+
+Course times each day:
+
+- 09:30 - 10:00 (set-up)
+
+- 10:00 - 11:00
+
+- break
+
+- 11:30 - 12:30
+
+- 12:30 - 13:30: lunch
+
+- 13:30 - 15:00
+
+- break
+
+- 15:00 - 16:00
+
+- 16:00 - 16:30 (Q&A)
 
 Day 1:
 
 Introduction to R/RStudio
 
-- How to use R/RStudio effectively
+- How to use R/RStudio effectively 
 - Using packages: example with sf/ggplot2 (tbc)
-- The structure of spatial objects in R
-- Temporal data with stats19 data example
+- Spatial data analysis
 - Visualising spatial datasets
 
 Day 2:
 
-- stats19 data analysis
+- stats19 data analysis - with spatial/temporal analysis 
 - OD data with stplanr
 - Data and methods for assessing cycling potential
 - Local route network analysis 
+  - Download data from open roads: put on test scripts
+

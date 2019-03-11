@@ -1,5 +1,5 @@
 ---
-title: "Intermediate and Advanced R for Spatial Data Analysis"
+title: "R for Spatial Transport Data Analysis"
 author: "Robin Lovelace, University of Leeds, \n `r Sys.Date()`"
 date: "Slides: [rpubs.com/RobinLovelace](http://rpubs.com/RobinLovelace)"
 output:
@@ -13,13 +13,12 @@ output:
 
 Topics covered:
 
-- Use R effectively in research
+- R and RStudio effectively
 - Automated and reproducible workflows
 - Manipulate non-spatial data: data carpentry
 - Find, download, load and save geographic data
 - Manipulate spatial data: geographical subsetting, aggregation and joining
 - Visualise your work in attractive and potentially on-line way
-- An introduction to geographical modelling
 
 ## Day 1
 
