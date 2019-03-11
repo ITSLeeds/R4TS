@@ -1,16 +1,28 @@
-# 2 day course: R for Spatial Transport Data
+---
+title: "2 day course: R for Spatial Transport Data"
+output: github_document
+bibliography: ../software-references.bib
+---
+
+See https://github.com/ITSLeeds/R4TS/blob/master/courses/dft-2day.Rmd
 
 Assumed prior knowledge:
 
-- Some knowledge of tidyverse is highly recommended, e.g. already know or have read 
+- Working knowledge of R, e.g. have completed: 
+  - Introduction to R free DataCamp course: https://www.datacamp.com/courses/free-introduction-to-r
+  - Recommended reading: Section 4.2 of *Efficient R Programming* [@gillespie_efficient_2016]: https://csgillespie.github.io/efficientR/efficient-workflow.html#package-selection
 
+- Some knowledge of tidyverse is highly recommended, e.g. already know the contents of or have read-up on **and tried examples from** the following 'cheatsheets':
+  - Tidyverse for Beginners DataCamp Cheat Sheet (see [here](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Tidyverse+Cheat+Sheet.pdf)). **At a minimum you will have completed up to Chapter 5 on this online course** (this may take ~2 hours)
+  - Data wrangling with dplyr and tidyr RStudio cheet cheet (see [here](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf))
+  
 <!-- **It's in the Analysis directorate** -->
-
 
 ## Computing Requirements
 
 - DfT will provide desktops with recent versions of R and RStudio installed, including:
-  - RStudio 3.5.3 recommended (although any R 3.5 release should work): https://cran.r-project.org/
+  - R 3.5.3 recommended (although any R 3.5 release should work): https://cran.r-project.org/
+  - RStudio 1.1.436 - see https://www.rstudio.com/products/rstudio/download/
   - Will require up-to-date versions of **tidyverse** and **sf** packages, at a minimum
   - Other packages we'll use:
     - stats19
@@ -74,4 +86,18 @@ Day 2:
 - Data and methods for assessing cycling potential
 - Local route network analysis 
   - Download data from open roads: put on test scripts
+
+## Optional extra reading
+
+- Optional extra reading: for context, you may want to read-up on:
+  - Overview of GIS in R, e.g. in Chapter 1 of *Geocomputation with R* or this blog post: https://www.jessesadler.com/post/gis-with-r-intro/
+  - stplanr: A package for transport planning[@lovelace_stplanr:_2018]
+  - R for data science [@grolemund_r_2016]
+  - For an overview of spatial transport data types, see  Chapter 12 of *Geocomputation with R* [@lovelace_geocomputation_2019]: http://geocompr.robinlovelace.net/transport.html
+
+  
+## References
+
+
+
 

@@ -1,0 +1,31 @@
+---
+output: github_document
+bibliography: software-references.bib
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+# refs = RefManageR::ReadZotero(group = "418217", .params = list(collection = "JFR868KJ", limit = 100))
+# RefManageR::WriteBib(refs, "software-references.bib")
+```
+
+# R for spatial transport data science
+
+The repo provides a home for teaching material on handling spatial transport data in R.
+
+To ask questions about the content, sign-up to GitHub and open an issue on the issue tracker at https://github.com/ITSLeeds/R4TS/issues
+
+The course will use content from a range of sources, including: 
+
+  - stplanr: A package for transport planning[@lovelace_stplanr:_2018]
+  - R for data science [@grolemund_r_2016]
+  - For an overview of spatial transport data types, see  Chapter 12 of *Geocomputation with R* [@lovelace_geocomputation_2019]: http://geocompr.robinlovelace.net/transport.html
+  
+## References
+
